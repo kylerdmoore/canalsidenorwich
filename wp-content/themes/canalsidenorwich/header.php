@@ -18,19 +18,28 @@
 <body <?php body_class(); ?>>
 
 <header>
-	<?php get_search_form(); ?>
+	<nav class="navbar">
 
-	<?php wp_nav_menu(
+		<div class="header-logo">
+			<a href="<?= site_url() ?>">
+				<img src="https://placeimg.com/100/40/any" alt="Logo" title="Logo">
+			</a>
+		</div>
+
+		<?php wp_nav_menu(
 			array(
-					'menu' => 'main',
-					'menu_class' => 'nav',
-					'menu_id' => 'main-nav',
-					'container' => 'nav',
-					'container_class' => 'navbar',
-					'container_id' => 'main-nav-container',
-					'depth' => 1,
-					'theme_location' => 'main-nav',
-					'item_spacing' => 'discard'
+				'menu'            => 'main',
+				'menu_class'      => 'nav',
+				'container_class' => 'nav-left',
+				'depth'           => 1,
+				'theme_location'  => 'main-nav',
+				'item_spacing'    => 'discard'
 			)
-	); ?>
+		); ?>
+
+		<div class="nav-right">
+			<?php get_search_form(); ?>
+		</div>
+
+	</nav>
 </header>

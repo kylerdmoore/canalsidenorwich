@@ -31,20 +31,3 @@ function tbinorwich_search_form( $form ) {
 }
 
 add_filter( 'get_search_form', 'tbinorwich_search_form' );
-
-function add_logo_to_main_nav( $items, $args ) {
-	if ( $args->theme_location == 'main-nav' ) {
-		$logo = '<li id="main-nav-logo"><a href="' . site_url() . '"><img src="https://placeimg.com/100/100/any" alt="Logo" title="Logo"></a></li>';
-
-		$items = str_replace( '</li><li', '</li>,<li', $items );
-		$items = explode( ',', $items );
-
-		array_splice( $items, count( $items ) / 2, 0, $logo );
-
-		$items = implode( '', $items );
-	}
-
-	return $items;
-}
-
-add_filter( 'wp_nav_menu_items', 'add_logo_to_main_nav', 10, 2 );

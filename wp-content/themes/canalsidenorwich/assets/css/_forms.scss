@@ -1,18 +1,3 @@
-input {
-	border: none;
-	border-bottom: 2px solid #ddd;
-	padding: 4px 10px;
-	font-family: $secondary-font;
-	font-size: 14px;
-	line-height: (20 / 14);
-	@include transition( border-color ease-in-out .15s );
-
-	&:focus {
-		outline: none;
-		border-bottom-color: $link-hover-color;
-	}
-}
-
 #searchform {
 	display: block;
 	padding: 10px;
@@ -23,8 +8,33 @@ input {
 		display: block;
 	}
 
-	input:focus + #searchsubmit {
-		border-bottom-color: $link-hover-color;
+	label {
+		color: $primary-color;
+	}
+
+	input {
+		background-color: $primary-bg-color;
+		color: $primary-color;
+		border: none;
+		border-bottom: 2px solid #ddd;
+		padding: 4px 10px;
+		font-family: $secondary-font;
+		font-size: 14px;
+		line-height: (20 / 14);
+		@include transition(border-color ease-in-out .15s);
+
+		&:focus {
+			outline: none;
+			border-bottom-color: $link-hover-color;
+
+			+#searchsubmit {
+				border-bottom-color: $link-hover-color;
+			}
+		}
+	}
+
+	button {
+		color: $primary-color;
 	}
 
 	@include clearfix;

@@ -11,3 +11,149 @@ Text Domain: canalsidenorwich
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0; }
+
+pre {
+  max-width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  white-space: normal;
+  background: #eee;
+  border: 1px solid #ddd; }
+
+a {
+  color: #fddeae;
+  text-decoration: none; }
+  a:hover {
+    color: #fbc97c;
+    text-decoration: underline; }
+
+#hero-image {
+  background: #f9ab32 url("https://placeimg.com/1920/1080/any") no-repeat center/cover;
+  position: relative;
+  height: 480px;
+  margin-top: -20px; }
+  #hero-image div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-align: center;
+    transform: translate(-50%, -50%); }
+    #hero-image div h1 {
+      font-size: 5.0em; }
+    #hero-image div p,
+    #hero-image div button {
+      font-size: 1.5em; }
+
+.container {
+  margin: 0 auto;
+  padding: 15px; }
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  .container:after {
+    clear: both; }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
+
+.navbar {
+  position: relative;
+  margin-bottom: 20px;
+  min-height: 50px;
+  background-color: #8aea3e;
+  border-color: #6fdd18;
+  z-index: 100; }
+  .navbar .header-logo {
+    display: inline-block;
+    float: left; }
+    .navbar .header-logo a {
+      display: inline-block;
+      padding: 5px 10px;
+      max-height: 40px; }
+  .navbar .nav-left {
+    display: inline-block;
+    float: left; }
+  .navbar .nav-right {
+    display: inline-block;
+    float: right; }
+  .navbar .nav {
+    list-style-type: none;
+    border: 1px solid transparent;
+    display: inline-block;
+    padding: 0;
+    margin: 0; }
+    .navbar .nav li {
+      display: block;
+      float: left;
+      position: relative; }
+      .navbar .nav li a {
+        display: block;
+        position: relative;
+        padding: 10px 15px;
+        min-height: 50px;
+        color: #ddffff;
+        font-family: Impact, sans-serif;
+        font-size: 1.5em;
+        text-decoration: none;
+        text-transform: uppercase; }
+        .navbar .nav li a:hover {
+          color: #aaffff; }
+
+#searchform {
+  display: block;
+  padding: 10px;
+  min-height: 25px; }
+  #searchform div {
+    float: right;
+    display: block; }
+  #searchform label {
+    color: #ddffff; }
+  #searchform input {
+    background-color: #8aea3e;
+    color: #ddffff;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 4px 10px;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    -webkit-transition: border-color ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s; }
+    #searchform input:focus {
+      outline: none;
+      border-bottom-color: #fbc97c; }
+      #searchform input:focus + #searchsubmit {
+        border-bottom-color: #fbc97c; }
+  #searchform button {
+    color: #ddffff; }
+  #searchform:before, #searchform:after {
+    content: " ";
+    display: table; }
+  #searchform:after {
+    clear: both; }
+
+#searchsubmit {
+  float: right;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  font-size: 14px;
+  line-height: 1.42857;
+  padding: 4px 10px;
+  cursor: pointer;
+  -webkit-transition: border-color ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s; }

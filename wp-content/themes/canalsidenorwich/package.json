@@ -5,7 +5,8 @@
   "main": "assets/js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack --progress",
+    "watch": "webpack --watch --progress"
   },
   "author": "Kyler Moore <kylerdmoore@gmail.com>",
   "license": "ISC",
