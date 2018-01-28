@@ -1,0 +1,68 @@
+body {
+	font-family: $secondary-font;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+pre {
+	max-width: 100%;
+	padding: 15px;
+	border-radius: 5px;
+	white-space: normal;
+	background: #eee;
+	border: 1px solid #ddd;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover {
+		color: $link-hover-color;
+		text-decoration: underline;
+	}
+}
+
+#hero-image {
+	background: $secondary-bg-color url( "https://placeimg.com/1920/1080/any" ) no-repeat center/cover;
+	position: relative;
+	height: 480px;
+	margin-top: -20px;
+
+	div {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		color: $secondary-color;
+		text-align: center;
+		transform: translate( -50%, -50% );
+
+		h1 {
+			font-size: 5.0em;
+		}
+
+		p,
+		button{
+			font-size: 1.5em;
+		}
+	}
+}
+
+.container {
+	margin: 0 auto;
+	padding: 15px;
+	@include clearfix;
+
+	@media ( min-width: 768px ) {
+		width: 750px;
+	}
+
+	@media ( min-width: 992px ) {
+		width: 970px;
+	}
+
+	@media ( min-width: 1200px ) {
+		width: 1170px;
+	}
+}

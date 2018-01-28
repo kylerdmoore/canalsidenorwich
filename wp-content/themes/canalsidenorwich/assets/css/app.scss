@@ -1,0 +1,25 @@
+/*
+Theme Name: Canalside Services LLC
+Author: kylerdmoore <kylerdmoore@gmail.com>
+Author URI: http://kylerdmoore.com/
+Description: Custom theme made for Canalside Services LLC (http://canalsidenorwich.com)
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: canalsidenorwich
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+// Functions and variables
+@import 'functions';
+@import 'variables';
+@import 'mixins';
+
+// Core
+@import 'main';
+
+// Components
+@import 'nav';
+@import 'forms';

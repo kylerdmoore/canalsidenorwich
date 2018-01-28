@@ -1,0 +1,43 @@
+input {
+	border: none;
+	border-bottom: 2px solid #ddd;
+	padding: 4px 10px;
+	font-family: $secondary-font;
+	font-size: 14px;
+	line-height: (20 / 14);
+	@include transition( border-color ease-in-out .15s );
+
+	&:focus {
+		outline: none;
+		border-bottom-color: $link-hover-color;
+	}
+}
+
+#searchform {
+	display: block;
+	padding: 10px;
+	min-height: 25px;
+
+	div {
+		float: right;
+		display: block;
+	}
+
+	input:focus + #searchsubmit {
+		border-bottom-color: $link-hover-color;
+	}
+
+	@include clearfix;
+}
+
+#searchsubmit {
+	float: right;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #ddd;
+	font-size: 14px;
+	line-height: (20 / 14);
+	padding: 4px 10px;
+	cursor: pointer;
+	@include transition( border-color ease-in-out .15s );
+}

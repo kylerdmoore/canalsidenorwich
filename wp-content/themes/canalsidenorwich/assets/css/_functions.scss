@@ -1,0 +1,7 @@
+@function set-color( $color ) {
+	@if( lightness( $color ) > 50 ) {
+		@return rgb( ( random( 255 ) + 200 ), ( random( 255 ) + 200 ), ( random( 255 ) + 200 ) );
+	} @else {
+		@return rgb( random( 55 ), random( 55 ), random( 55 ) );
+	}
+}

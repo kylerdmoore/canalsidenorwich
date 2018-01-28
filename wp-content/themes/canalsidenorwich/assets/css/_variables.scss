@@ -1,0 +1,13 @@
+// Font
+$primary-font: Impact, sans-serif;
+$secondary-font: Helvetica, sans-serif;
+
+// Background Colors
+$primary-bg-color: rgb( random( 255 ), random( 255 ), random( 255 ) );
+$secondary-bg-color: rgb( random( 255 ), random( 255 ), random( 255 ) );
+
+// Text Colors
+$primary-color: set-color( $primary-bg-color );
+$secondary-color: set-color( $secondary-bg-color );
+$link-color: lighten( $secondary-bg-color, 25% );
+$link-hover-color: darken( $link-color, 10% );
